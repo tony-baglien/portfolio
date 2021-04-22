@@ -5,75 +5,76 @@ ul {
   padding: 0;
   margin: 0;
   opacity: 0;
-}
 
-ul.reveal {
-  display: flex;
-}
+  &.reveal {
+    display: flex;
+  }
 
-li {
-  list-style: none;
-  text-align: center;
-  margin: 0 4rem;
-}
-a {
-  font-size: 40px;
-  line-height: 80px;
-  background-color: #ccc;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  width: 12rem;
-  height: 6rem;
-  text-decoration: none;
-  text-align: left;
-  transition: all 0.5s;
-  transform: rotate(-30deg) skew(25deg);
-  box-shadow: rgba(0, 0, 0, 0.24) -15px 15px 8px;
+  & li {
+    list-style: none;
+    text-align: center;
+    margin: 0 4rem;
 
-  color: black;
-  text-transform: uppercase;
-  position: relative;
-  backface-visibility: hidden;
-}
+    & a {
+      font-size: 40px;
+      line-height: 80px;
+      background-color: #ccc;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      width: 12rem;
+      height: 6rem;
+      text-decoration: none;
+      text-align: left;
+      transition: all 0.5s;
+      transform: rotate(-30deg) skew(25deg);
+      box-shadow: rgba(0, 0, 0, 0.24) -15px 15px 8px;
 
-li:hover a {
-  transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
-  transform-style: preserve-3d;
-  box-shadow: rgb(109, 63, 67) -50px 50px 50px;
-  color: white;
-  background: #919193;
-  font-size: 60px;
-}
+      color: black;
+      text-transform: uppercase;
+      position: relative;
+      backface-visibility: hidden;
+    }
 
-a::before {
-  content: "";
-  position: absolute;
-  background: #b1b1b1;
-  width: 32px;
-  height: 99px;
-  left: -32px;
-  top: 15px;
-  transform: skewY(-45deg);
-}
+    &:hover a {
+      transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+      transform-style: preserve-3d;
+      box-shadow: rgb(109, 63, 67) -50px 50px 50px;
+      color: white;
+      background: #919193;
+      font-size: 60px;
+    }
 
-li:hover a::before {
-  background: #e95447;
-}
+    & a::before {
+      content: "";
+      position: absolute;
+      background: #b1b1b1;
+      width: 32px;
+      height: 99px;
+      left: -32px;
+      top: 15px;
+      transform: skewY(-45deg);
+    }
 
-a::after {
-  content: "";
-  position: absolute;
-  background: #868686;
-  top: 96px;
-  left: -18px;
-  height: 32px;
-  width: 193px;
-  transform: skewX(-45deg);
-}
+    &:hover a::before {
+      background: #e95447;
+    }
 
-li:hover a::after {
-  background: #c82f30;
+    & a::after {
+      content: "";
+      position: absolute;
+      background: #868686;
+      top: 96px;
+      left: -18px;
+      height: 32px;
+      width: 193px;
+      transform: skewX(-45deg);
+    }
+
+    & li:hover a::after {
+      background: #c82f30;
+    }
+  }
 }
 
 .contact:hover {

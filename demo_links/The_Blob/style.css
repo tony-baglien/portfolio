@@ -1,0 +1,106 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "sans-serif";
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  filter: contrast(15);
+}
+
+.circle-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0;
+  filter: blur(10px);
+  transition: transform 2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  overflow: hidden;
+  scrollbar-width: 0;
+}
+
+.circle {
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid black;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+}
+
+#base {
+  border: 5px solid black;
+}
+
+#mc1 {
+  height: 200px;
+  width: 200px;
+  /* border: 1px solid red; */
+  background-color: black;
+  transform-origin: 70% 60%;
+}
+
+#mc2 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  /* border: 1px solid green; */
+  transform-origin: 62% 60%;
+}
+
+#mc3 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  /* border: 1px solid blue; */
+  transform-origin: 44% 38%;
+}
+
+.orbit-container-1 {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  height: 200px;
+  width: 500px;
+  transform-origin: 34% 15%;
+}
+
+.orbit-container-1 > div {
+  height: 50px;
+  width: 50px;
+}
+
+.orbit-container-2 {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 200px;
+  transform-origin: 90% 87%;
+}
+
+.orbit-container-2 > div {
+  height: 10px;
+  width: 10px;
+}
+
+.orbit-container-3 {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  height: 300px;
+  width: 50px;
+  transform-origin: 17% 70%;
+}
+
+.orbit-container-3 > div {
+  height: 78px;
+  width: 78px;
+}
